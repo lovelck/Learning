@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope" xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding" xmlns:tptz="http://www.onvif.org/ver20/ptz/wsdl" xmlns:tt="http://www.onvif.org/ver10/schema">
+    <SOAP-ENV:Header />
+    <SOAP-ENV:Body>
+        <tptz:GetPresetToursResponse>
+            <tptz:PresetTour token="TokenTour-0">
+                <tt:Name>NMTokenTour-0</tt:Name>
+                <tt:Status>
+                    <tt:State>Touring</tt:State>
+                </tt:Status>
+                <tt:AutoStart>false</tt:AutoStart>
+                <tt:StartingCondition />
+                <tt:TourSpot>
+                    <tt:PresetDetail>
+                        <tt:PresetToken>preset-1</tt:PresetToken>
+                    </tt:PresetDetail>
+                    <tt:Speed>
+                        <tt:PanTilt x="0.7" y="0.7" space="http://www.onvif.org/ver10/tptz/PanTiltSpaces/GenericSpeedSpace" />
+                        <tt:Zoom x="0.7" space="http://www.onvif.org/ver10/tptz/ZoomSpaces/ZoomGenericSpeedSpace" />
+                    </tt:Speed>
+                    <tt:StayTime>5</tt:StayTime>
+                </tt:TourSpot>
+                <tt:TourSpot>
+                    <tt:PresetDetail>
+                        <tt:PresetToken>preset-3</tt:PresetToken>
+                    </tt:PresetDetail>
+                    <tt:Speed>
+                        <tt:PanTilt x="0.7" y="0.7" space="http://www.onvif.org/ver10/tptz/PanTiltSpaces/GenericSpeedSpace" />
+                        <tt:Zoom x="0.7" space="http://www.onvif.org/ver10/tptz/ZoomSpaces/ZoomGenericSpeedSpace" />
+                    </tt:Speed>
+                    <tt:StayTime>5</tt:StayTime>
+                </tt:TourSpot>
+            </tptz:PresetTour>
+            <tptz:PresetTour token="TokenTour-1">
+                <tt:Name>NMTokenTour-1</tt:Name>
+                <tt:Status>
+                    <tt:State>Touring</tt:State>
+                </tt:Status>
+                <tt:AutoStart>false</tt:AutoStart>
+                <tt:StartingCondition />
+            </tptz:PresetTour>
+        </tptz:GetPresetToursResponse>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
